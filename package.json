@@ -14,10 +14,9 @@
     "build": "yarn build:app && yarn build:packed",
     "start:run-electron": "cross-env NODE_ENV=development electron ./app/electron-main.js",
     "start": "yarn build:electron-main:dev && concurrently \"yarn start:renderer:dev\" \"yarn start:run-electron\" -n renderer,electron",
-    "cleanup": "rimraf app/* && rimraf out/*",
+    "cleanup": "rimraf app && rimraf out",
     "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
-    "prepublish": "yarn cleanup && yarn build"
+    "prettier:write": "prettier --write ."
   },
   "author": "Lukas Bach",
   "license": "ISC",
