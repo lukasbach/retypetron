@@ -65,3 +65,6 @@ convenience, but can easily be removed if you don't want them.
     in the scripts inside of `package.json`.
 - I want a more comprehensive boilerplate that includes more features.
   - Look into https://github.com/electron-react-boilerplate/electron-react-boilerplate
+- Using async ``fs``-method do not return and block indefinitely.
+  - https://github.com/electron/electron/issues/22119
+  - TLDR: Set ``app.allowRendererProcessReuse = false;`` in ``src/electron-main.ts:37``
