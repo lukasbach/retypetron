@@ -18,7 +18,11 @@
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write ."
   },
-  "author": "Lukas Bach",
+  "author": {
+    "name": "Lukas Bach",
+    "url": "https://lukasbach.com",
+    "email": "lbach@outlook.de"
+  },
   "license": "ISC",
   "dependencies": {
     "react": "^16.13.1",
@@ -43,5 +47,9 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukasbach/retypetron.git"
   }
 }

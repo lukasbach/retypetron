@@ -21,6 +21,19 @@ Features:
   zipped portable packages.
 - `prettier` included for formatting.
 
+## Preparing releases
+
+The CI pipeline is setup to automatically release new versions for 
+pushed tags. Make sure to bump the version in the ``package.json``
+file, and tag the commit with the new version (e.g. ``v1.0.0``).
+
+The following manual steps have to be completed initially to setup
+releases:
+* Set a GitHub Actions secret with the name ``GH_SECRET`` that has repo access
+* Set a suitable ``appId`` and ``productName`` in ``electron-builder.json``
+* Set suitable ``name``, ``description``, ``author``, ``repository`` values in ``package.json``
+* Overwrite ``resources/icon.png`` with a suitable logo image. Note that, for the Mac OS build to work, it must be at least 512x512 
+
 ## Removing stuff
 
 Utilities like `electron-builder` and `prettier` are included for
